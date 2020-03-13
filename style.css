@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    position: fixed;
+    background-color: rgba(0,0,0,1);
+    height: 10vh;
+    width: 100%;
+    z-index: 2;
+}
+
+#logo{
+    display: inline-block;
+    position: relative;
+    height: 100%;
+}
+
+#logo img{
+    height: 100%;
+}
+
+nav{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 5px;
+    width: 70%;
+}
+
+ul{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+li{
+    display: inline-block;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 24;
+}
+
+li:nth-child(2){
+    background-color: rgba(0,99,0,0.7);
+}
+
+li:hover{
+    border: 1px solid white;
+}
+
+main{
+    padding-top: 12.5vh;
+    z-index: 1;
+}
+
+.prodotti{
+    margin-bottom: 2.5vh;
+}
+
+.prodotto{
+    display: inline-block;
+    position: relative;
+    margin-left: 2.5%;
+    border: 1px solid darkgrey;
+    width: 30%;
+}
+
+.prodotto img{
+    width: 100%;
+}
+
+.prodotto img a{
+    position: absolute;
+}
+
+.descrzione{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.66);
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.sconto{
+    display: inline-block;
+    background-color: rgba(255, 0, 0, 0.5);
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.mi-piace{
+    display: inline-block;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.mi-piace:active i{
+    background-color: red;
+}
+
+.prodotto:hover .descrzione{
+    display: block;
+}
